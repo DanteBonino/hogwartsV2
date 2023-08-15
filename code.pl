@@ -161,4 +161,8 @@ ganadoraDeLaCopa(Casa):-
     puntajeTotalCasa(Casa,Puntaje),
     forall(puntajeTotalCasa(_,PuntajeDeOtraCasa), Puntaje >= PuntajeDeOtraCasa).
 
-%Punto 4:
+/*
+La ventaja del paradigma lógico sobre el funcional es la multiplicidad de respuestas. En funcional cumplimos con las reglas que conocíamos de análisis matemático: existencia y, la más relevante a mi justificación, unicidad.
+Para cada entrada teníamos una única salida, mientras que lógico lo que busca es responder con todas las formas de probar verdadera a una consulta.
+Claro que en funcional probablemente podríamos lograr algo similar si trabajáramos con listas, pero implicaría hacer un trabajo mayor usando todas esas abstracciones de orden superior de las cuales en buena parte lógico nos salva.
+*/
